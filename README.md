@@ -25,7 +25,7 @@ This formula indicates that it is necessarily true that if proposition p holds, 
 # Usage
 Load the module as usual in Prolog and then try the following.
 
-* Checking Atomic Propositions:
+1. Checking Atomic Propositions:
 ```Prolog
 eval(1, p).
 ```
@@ -35,7 +35,7 @@ eval(2, q).
 ```
 * Check if proposition q is true in world 2:
 
-* Negation:
+2. Negation:
 * Check if not p is true in world 3:
 ```Prolog
 eval(3, not(p)).
@@ -45,7 +45,7 @@ eval(3, not(p)).
 eval(1, not(q)).
 ```
 
-* Conjunction:
+3. Conjunction:
 * Check if (p ∧ q) is true in world 2:
 ```Prolog
 eval(2, and(p, q)).
@@ -55,7 +55,7 @@ eval(2, and(p, q)).
 eval(3, and(p, q)).
 ```
 
-* Disjunction:
+4. Disjunction:
 * Check if (p ∨ q) is true in world 1:
 ```Prolog
 eval(1, or(p, q)).
@@ -65,7 +65,7 @@ eval(1, or(p, q)).
 eval(3, or(p, q)).
 ```
 
-* Implication:
+5. Implication:
 * Check if (p → q) is true in world 1:
 * ```Prolog
 eval(1, implies(p, q)).
@@ -75,7 +75,7 @@ eval(1, implies(p, q)).
 eval(2, implies(p, q)).
 ```
 
-* Necessity (Box):
+6. Necessity (Box):
 * Check if it is necessarily true that p holds in world 1:
 ```Prolog
 eval(1, box(p)).
@@ -85,7 +85,7 @@ eval(1, box(p)).
 eval(2, box(p)).
 ```
 
-* Possibility (Diamond):
+7. Possibility (Diamond):
 * Check if it is possibly true that q holds in world 1:
 ```Prolog
 eval(1, diamond(q)).
