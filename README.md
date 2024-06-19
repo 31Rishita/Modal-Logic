@@ -26,14 +26,14 @@ This formula indicates that it is necessarily true that if proposition p holds, 
 Load the module as usual in Prolog and then try the following.
 
 1. Checking Atomic Propositions:
+* Check if proposition p is true in world 1:
 ```Prolog
 eval(1, p).
 ```
-* Check if proposition p is true in world 1:
+* Check if proposition q is true in world 2:
 ```Prolog
 eval(2, q).
 ```
-* Check if proposition q is true in world 2:
 
 2. Negation:
 * Check if not p is true in world 3:
